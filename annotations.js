@@ -1,4 +1,4 @@
-import { InkHistory, pointFromClient, segmentHitsStroke, clipSegmentToRect } from './annotations-model.js?v=tutorial4-1';
+import { InkHistory, pointFromClient, segmentHitsStroke, clipSegmentToRect } from './annotations-model.js?v=quiz-review-1';
 
 const NS = 'http://www.w3.org/2000/svg';
 const STORAGE_KEY = 'ce2407a-tutorial4-slides:ink:v1';

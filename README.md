@@ -1,19 +1,32 @@
 # CE2407A Tutorial 4
 
-Six web slides for Tutorial 4, Week 12, covering Tutorial Questions Set 2, Q5 and Q9.
+Thirteen web slides for Tutorial 4, Week 12: a 15-minute quiz review of Lectures 1–5, followed by Tutorial Questions Set 2, Q5 and Q9.
 
 1. Tutorial 4 cover and QR link
-2. Q5: Original question statement and Taylor-series hint
-3. Q5: Stations and fuel range interactive exercise
-4. Q9: Original question statement and stress equation
-5. Q9: Column sizing interactive exercise
-6. Blank whiteboard for handwritten equations
+2. Quiz scope (30 seconds)
+3. Uncertainty and histograms (90 seconds)
+4. Events and independence (2 minutes)
+5. Conditional probability and Bayes (2 minutes)
+6. Random variables, probabilities and moments (3 minutes)
+7. Normal distribution (3 minutes)
+8. Lognormal distribution (3 minutes)
+9. Q5: Original question statement and Taylor-series hint
+10. Q5: Stations and fuel range interactive exercise
+11. Q9: Original question statement and stress equation
+12. Q9: Column sizing interactive exercise
+13. Blank whiteboard for handwritten equations
+
+## Quiz review
+
+The seven review slides total 900 seconds. Timing labels indicate the suggested elapsed time, rather than an automatic timer. Each teaching slide has a quick check with **Show answer** and room for handwriting. Use **Pointer** when opening an answer, then select the pen to continue writing. Lecture links open the corresponding Canvas notes and require course access. Supporting teaching cues and source details are stored in each slide's HTML notes.
+
+Coverage follows the [28 October announcement](https://canvas.nus.edu.sg/courses/93981/discussion_topics/510267): Lectures 1–5, including normal and lognormal distributions. Lectures 6–7, blended-learning materials and MATLAB are excluded. The given exponential PDF example in Lecture 4 remains part of the covered notes. Q5 and Q9 follow as regular tutorial work involving later topics.
 
 ## Present
 
 Open [the presentation](https://jiaruilei.github.io/CE2407A-Tutorial4-Slides/). Use the arrow keys or bottom buttons to change slides. Press O for overview and F for full screen. When an exercise has keyboard focus, use the bottom buttons to change slides.
 
-The top menu jumps to **Question**, **Explore**, or **Whiteboard**. **View larger** opens a question snapshot with zoom, pan and Fit width controls. **Open exercise** opens the current question in a separate tab. The cover QR code links to this deck.
+The top menu jumps to each review topic, **Question**, **Explore**, or **Whiteboard**. **View larger** opens a question snapshot with zoom, pan and Fit width controls. **Open exercise** opens the current question in a separate tab. The cover QR code links to this deck.
 
 **Enlarge exercise** fills the slide, and **Back to slide** restores its layout. **More → Reset exercise** resets only that exercise and its chat. Leaving an exercise slide preserves its calculations and chat. Results and worked solutions start hidden and appear after Calculate.
 
@@ -33,7 +46,7 @@ The final whiteboard uses the same annotation tools and saving behavior. It is a
 
 ## Design and source assets
 
-The layout and controls follow [CE2407A-Tutorial1-Slides](https://github.com/jiaruilei/CE2407A-Tutorial1-Slides): 1280 × 720 slides, Arial, navy `#13294b`, orange `#ed7d31`, the same cover, question and interactive layouts, and the same ink and full-screen behavior. The CSS, question viewer, fullscreen controller and bundled Reveal.js are unchanged from Tutorial 1. Tutorial 2 supplies the existing whiteboard and per-question navigation support.
+The layout and controls follow [CE2407A-Tutorial1-Slides](https://github.com/jiaruilei/CE2407A-Tutorial1-Slides): 1280 × 720 slides, Arial, navy `#13294b`, orange `#ed7d31`, the same cover, question and interactive layouts, and the same ink and full-screen behavior. The base CSS, question viewer, fullscreen controller and bundled Reveal.js are unchanged from Tutorial 1. Review-specific styling is scoped in `review.css` and uses the same question-heading position and size. Tutorial 2 supplies the existing whiteboard and per-question navigation support.
 
 Question headings stay at x=97.92, y=32 in 52px Arial. Snapshots begin at x=98, y=132 and use 2 CSS pixels per PDF point, rendered at 288 dpi for crisp display. Q5 occupies 858 × 490 CSS pixels; Q9 occupies 858 × 464. Both include the complete question and all parts without retyping the source.
 
@@ -45,7 +58,7 @@ To rebuild snapshots, install Pillow and Poppler, then run:
 python scripts/extract-questions.py --source-dir "path/to/source-pdfs"
 ```
 
-Stable slide IDs are `slide-1`, `question-t2-q5`, `slide-2`, `question-t2-q9`, `slide-3`, and `whiteboard`. Preserve these IDs and the ink namespace when updating this deck. Reveal.js is bundled with its license in `LICENSE-reveal.txt`.
+Original stable slide IDs are `slide-1`, `question-t2-q5`, `slide-2`, `question-t2-q9`, `slide-3`, and `whiteboard`. The review adds `review-scope`, `review-uncertainty`, `review-events`, `review-bayes`, `review-random-variables`, `review-normal`, and `review-lognormal`. Preserve these IDs and the ink namespace when updating this deck so existing saved annotations remain attached to the right content. Reveal.js is bundled with its license in `LICENSE-reveal.txt`.
 
 ## Preview and checks
 

@@ -1,5 +1,5 @@
 'use strict';
-import { installAnnotations } from './annotations.js?v=tutorial4-1';
+import { installAnnotations } from './annotations.js?v=quiz-review-1';
 import { createFullscreenController } from './fullscreen.js';
 import { installQuestionViewer } from './question-viewer.js';
 const deck = new Reveal({
@@ -108,10 +108,11 @@ function sync() {
   const questionLabel = question ? `T${slide.dataset.tutorial} Q${question}` : '';
   const isStatement = slide.classList.contains('question-statement');
   const isWhiteboard = slide.id === 'whiteboard';
+  const isReview = slide.classList.contains('review-slide');
   document.getElementById('current-question').textContent = question
-    ? `${questionLabel} · ${isStatement ? 'Question' : 'Explore'}` : isWhiteboard ? 'Whiteboard' : 'Questions';
+    ? `${questionLabel} · ${isStatement ? 'Question' : 'Explore'}` : isWhiteboard ? 'Whiteboard' : isReview ? 'Quiz review' : 'Sections';
   viewQuestion.hidden = !isStatement;
-  openExercise.hidden = isWhiteboard;
+  openExercise.hidden = isWhiteboard || isReview;
   openExercise.href = slide.dataset.exerciseUrl || 'https://jiaruilei.github.io/CE2407A_Tutorial2/';
   openExercise.textContent = question ? 'Open exercise' : 'Open exercises';
   openExercise.setAttribute('aria-label', question ? `Open ${questionLabel} exercise in a new tab` : 'Open exercises in a new tab');

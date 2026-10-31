@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { InkHistory, pointFromClient, segmentHitsStroke, clipSegmentToRect } from '../annotations-model.js';
 
 const stroke = (id = 'a', points = [{ x: 0, y: 0 }, { x: 100, y: 0 }], options = {}) =>
@@ -77,13 +78,16 @@ test('serialized current ink round-trips, preserves document coordinates and res
   assert.equal(destination.get('slide-3:expanded').length, 0);
 });
 
-test('question statements and whiteboard keep independent editable histories and saved ink', () => {
+test('review pages, question statements and whiteboard preserve old ink and independent saved histories', () => {
   const interactiveKeys = ['slide-1', 'slide-2', 'slide-3',
     'slide-2:expanded', 'slide-3:expanded'];
   const existing = { version: 1, slides: Object.fromEntries(interactiveKeys.map(key => [key, [stroke(`existing-${key}`)]])) };
   const history = new InkHistory();
   assert.equal(history.load(JSON.stringify(existing)), true);
-  const questionKeys = ['question-t2-q5', 'question-t2-q9', 'whiteboard'];
+  const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
+  const reviewKeys = [...html.matchAll(/<section id="([^"]+)"[^>]*data-review-seconds=/g)].map(match => match[1]);
+  assert.equal(reviewKeys.length, 7);
+  const questionKeys = ['question-t2-q5', 'question-t2-q9', 'whiteboard', ...reviewKeys];
   for (const key of questionKeys) {
     assert.equal(history.add(key, stroke(`new-${key}`)), true);
     assert.equal(history.clear(key), true);
@@ -113,6 +117,8 @@ test('invalid loads are atomic and cannot inject keys, bad coordinates or extra 
     { version: 1, slides: { 'slide-4:expanded': [] } }, { version: 1, slides: { 'slide-5:expanded': [] } },
     { version: 1, slides: { 'slide-1:expanded': [] } }, { version: 1, slides: { 'slide-2:other': [] } },
     { version: 1, slides: { 'whiteboard:expanded': [] } },
+    { version: 1, slides: { 'review-normal:expanded': [] } },
+    { version: 1, slides: { 'review-unknown': [] } },
     { version: 1, slides: { 'question-5': [] } }, { version: 1, slides: { 'question-t2-q5:expanded': [] } },
     { version: 1, slides: { 'question-t2-q9:expanded': [] } }, { version: 1, slides: { 'question-t2-q9-continued': [] } },
     { version: 1, slides: { 'question-t1-q5': [] } }, { version: 1, slides: { 'question-t2-q6': [] } },
