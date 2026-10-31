@@ -88,7 +88,7 @@ test('review pages, question statements, lecture notes and retired whiteboard pr
   const reviewKeys = [...html.matchAll(/<section id="([^"]+)"[^>]*class="review-slide\b/g)].map(match => match[1]);
   assert.equal(reviewKeys.length, 7);
   const notesKeys = [...html.matchAll(/<section id="([^"]+)"[^>]*class="question-statement lecture-notes"/g)].map(match => match[1]);
-  assert.equal(notesKeys.length, 2);
+  assert.equal(notesKeys.length, 4);
   const questionKeys = ['question-t2-q5', 'question-t2-q9', 'whiteboard', ...reviewKeys, ...notesKeys];
   for (const key of questionKeys) {
     assert.equal(history.add(key, stroke(`new-${key}`)), true);

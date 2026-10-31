@@ -1,5 +1,5 @@
 {
-  "layout": "Original PNG files copied byte-for-byte. CSS clipping arranges source regions into two columns without editing the images. The Q9 right column repeats the source header. Only the blank left margin is omitted from the displayed table.",
+  "layout": "Original PNG files copied byte-for-byte. CSS clipping arranges stacked source regions into two columns without editing the images. The Q9 normal-table right column repeats the source header; only its blank left margin is omitted. The Q9 lognormal parameter snapshot is displayed whole at 700 pixels wide.",
   "heading": {
     "x": 97.92,
     "y": 32,
@@ -100,6 +100,79 @@
       "source": "Q9.png",
       "asset": "assets/lecture-notes/set2-q9.png",
       "sha256": "bed170f594f768273719b2ef401b374ff2736aaccd20f3687ed41c698354de4d"
+    },
+    {
+      "question": 9,
+      "slide_id": "notes-t2-q9-lognormal",
+      "title": "Lognormal distribution",
+      "source": "Q9_2.png",
+      "asset": "assets/lecture-notes/set2-q9-lognormal.png",
+      "size": [
+        412,
+        305
+      ],
+      "panels": [
+        {
+          "bounds": [
+            0,
+            0,
+            412,
+            305
+          ],
+          "at": [
+            98,
+            132
+          ],
+          "display_width_px": 700,
+          "alt": "Lecture notes section 3.3.2: Lognormal Distribution. The original snapshot shows the lognormal density, parameters lambda = E(ln X) and zeta squared = var(ln X), mean and coefficient-of-variation conversions, median, and the distribution curves.",
+          "css": "left:98.000000px;top:132.000000px;width:700.000000px;height:518.203883px"
+        }
+      ],
+      "sha256": "75f42f9924b18c296ad6f9b2e7d4a4b7eb17ace3919c66a8fe44218540004cd1"
+    },
+    {
+      "question": 9,
+      "slide_id": "notes-t2-q9-products",
+      "title": "Products & quotients",
+      "source": "Q9_1.png",
+      "asset": "assets/lecture-notes/set2-q9-products.png",
+      "size": [
+        522,
+        720
+      ],
+      "panels": [
+        {
+          "bounds": [
+            0,
+            0,
+            522,
+            360
+          ],
+          "at": [
+            98,
+            132
+          ],
+          "display_width_px": 530,
+          "alt": "Lecture notes section 4.3.2: Product (or quotient) of Lognormal Random Variables. The original equations express Y = a0 X1^a1 X2^a2, transform it using natural logarithms, and calculate the mean and variance of ln Y, including the stated correlation assumption.",
+          "css": "left:98.000000px;top:132.000000px;width:530.000000px;height:731.034483px;clip-path:inset(0.000000000% 0.000000000% 50.000000000% 0.000000000%)"
+        },
+        {
+          "bounds": [
+            0,
+            360,
+            522,
+            720
+          ],
+          "at": [
+            652,
+            132
+          ],
+          "display_width_px": 530,
+          "alt": "Original diagram: taking the natural logarithm of a product of lognormal variables yields a weighted sum of normal variables. Calculate E(ln Y) = lambda Y and Stdev(ln Y) = zeta Y.",
+          "css": "left:652.000000px;top:-233.517241px;width:530.000000px;height:731.034483px;clip-path:inset(50.000000000% 0.000000000% 0.000000000% 0.000000000%)"
+        }
+      ],
+      "sha256": "696734c420cd47cafaa7dcd270d95d6a7710a8a128eaada084b17bcca214f0e1"
     }
   ]
 }

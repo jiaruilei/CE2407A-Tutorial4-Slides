@@ -1,6 +1,6 @@
 # CE2407A Tutorial 4
 
-Fourteen web slides for Tutorial 4, Week 12: a quiz review of Lectures 1–5, followed by Tutorial Questions Set 2, Q5 and Q9.
+Sixteen web slides for Tutorial 4, Week 12: a quiz review of Lectures 1–5, followed by Tutorial Questions Set 2, Q5 and Q9.
 
 1. Tutorial 4 cover and QR link
 2. Quiz scope
@@ -14,8 +14,10 @@ Fourteen web slides for Tutorial 4, Week 12: a quiz review of Lectures 1–5, fo
 10. Q5: Lecture notes on the Poisson process and distribution
 11. Q5: Stations and fuel range interactive exercise
 12. Q9: Original question statement and stress equation
-13. Q9: Lecture notes with the standard normal table
-14. Q9: Column sizing interactive exercise
+13. Q9: Lecture notes on lognormal parameters
+14. Q9: Lecture notes on products and quotients of lognormal variables
+15. Q9: Lecture notes with the standard normal table
+16. Q9: Column sizing interactive exercise
 
 ## Quiz review
 
@@ -51,7 +53,7 @@ Question headings stay at x=97.92, y=32 in 52px Arial. Snapshots begin at x=98, 
 
 Snapshots come from pages 3 and 5 of the supplied `CE2407A Tutorial Questions Set 2.pdf`. `assets/questions/manifest.json` records the source checksum, page numbers, crop bounds, dimensions, placement and accessible text. The PDF is not included.
 
-Lecture notes use the supplied `Q5.png` and `Q9.png`, copied byte-for-byte into `assets/lecture-notes`. CSS clipping displays their original content in two side-by-side panels beginning at x=98 and x=652, y=132, each 530px wide. Q5 separates the Poisson assumptions from the derivation. Q9 repeats the original table header above the continued rows and omits only the blank left margin. Source annotations remain intact. `assets/lecture-notes/manifest.json` records the checksums, source regions and placement. Each notes page has independent saved ink.
+Lecture notes use the supplied `Q5.png`, `Q9.png`, `Q9_1.png` and `Q9_2.png`, copied byte-for-byte into `assets/lecture-notes`. Q5 has one notes page; Q9 has three, covering lognormal parameters (`Q9_2.png`), products and quotients (`Q9_1.png`), then the standard normal table (`Q9.png`). The parameter image is shown whole at x=98, y=132, 700px wide. CSS clipping arranges the other images into two side-by-side panels beginning at x=98 and x=652, y=132, each 530px wide. The table repeats its original header above the continued rows and omits only the blank left margin. Source annotations remain intact. `assets/lecture-notes/manifest.json` records the checksums, source regions and placement. Each notes page has independent saved ink.
 
 To rebuild snapshots, install Pillow and Poppler, then run:
 
@@ -59,7 +61,7 @@ To rebuild snapshots, install Pillow and Poppler, then run:
 python scripts/extract-questions.py --source-dir "path/to/source-pdfs"
 ```
 
-Stable slide IDs are `slide-1`, `question-t2-q5`, `notes-t2-q5`, `slide-2`, `question-t2-q9`, `notes-t2-q9`, `slide-3`, `review-scope`, `review-uncertainty`, `review-events`, `review-bayes`, `review-random-variables`, `review-normal`, and `review-lognormal`. Preserve these IDs and the ink namespace when updating this deck so existing saved annotations remain attached to the right content. The retired `whiteboard` ink key remains accepted internally so older saved annotations can still be loaded. Reveal.js is bundled with its license in `LICENSE-reveal.txt`.
+Stable slide IDs are `slide-1`, `question-t2-q5`, `notes-t2-q5`, `slide-2`, `question-t2-q9`, `notes-t2-q9-lognormal`, `notes-t2-q9-products`, `notes-t2-q9`, `slide-3`, `review-scope`, `review-uncertainty`, `review-events`, `review-bayes`, `review-random-variables`, `review-normal`, and `review-lognormal`. Preserve these IDs and the ink namespace when updating this deck so existing saved annotations remain attached to the right content. The retired `whiteboard` ink key remains accepted internally so older saved annotations can still be loaded. Reveal.js is bundled with its license in `LICENSE-reveal.txt`.
 
 ## Preview and checks
 
