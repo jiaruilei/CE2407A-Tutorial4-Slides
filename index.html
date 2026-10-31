@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CE2407A Tutorial 4. Tutorial Set 2 Questions 5 and 9: Poisson service stations and lognormal column reliability.">
+  <title>Tutorial 4 · CE2407A</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="reveal.css">
+  <link rel="stylesheet" href="annotations.css?v=tutorial4-1">
+  <link rel="stylesheet" href="styles.css?v=tutorial4-1">
+  <link rel="stylesheet" href="question-viewer.css?v=tutorial4-1">
+</head>
+<body>
+<nav class="study-controls" aria-label="Study controls">
+  <div class="question-navigation">
+    <button id="question-menu-toggle" type="button" aria-expanded="false" aria-controls="question-menu" aria-label="Choose question"><span id="current-question">Questions</span><span aria-hidden="true">▾</span></button>
+    <nav id="question-menu" class="question-menu" aria-label="Question navigation" hidden>
+      <a class="menu-home" href="#/slide-1">Tutorial 4</a>
+      <div class="question-menu-row"><span>T2 Q5 <small>Service stations</small></span><a href="#/question-t2-q5" aria-label="T2 Q5 question">Question</a><a href="#/slide-2" aria-label="T2 Q5 explore">Explore</a></div>
+      <div class="question-menu-row"><span>T2 Q9 <small>Column sizing</small></span><a href="#/question-t2-q9" aria-label="T2 Q9 question">Question</a><a href="#/slide-3" aria-label="T2 Q9 explore">Explore</a></div>
+      <a class="menu-home" href="#/whiteboard">Whiteboard</a>
+    </nav>
+  </div>
+  <div class="study-actions">
+    <button id="view-question" type="button" hidden>View larger</button>
+    <a id="open-exercise" href="https://jiaruilei.github.io/CE2407A_Tutorial2/" target="_blank" rel="noopener">Open exercises</a>
+  </div>
+</nav>
+<main class="reveal" aria-label="CE2407A Tutorial 4 presentation">
+  <div class="slides">
+    <section id="slide-1" class="cover" data-title="Tutorial 4" aria-label="Slide 1: Tutorial 4">
+      <a class="cover-qr" href="https://jiaruilei.github.io/CE2407A-Tutorial4-Slides/#/slide-1" aria-label="Open the tutorial slides">
+        <img src="assets/tutorial-slides-qr.svg" width="400" height="400" alt="QR code linking to these Tutorial 4 slides" draggable="false">
+        <span>Open the slides</span>
+      </a>
+      <div class="cover-copy">
+        <p class="course-code">CE2407A</p>
+        <h1>Tutorial 4</h1>
+        <p class="cover-topic">Probability &amp; reliability</p>
+        <p class="cover-week">Week 12</p>
+        <p class="cover-author">Assistant Professor Lei Jiarui, Gary<br>Civil and Environmental Engineering<br>National University of Singapore</p>
+      </div>
+    </section>
+    <section id="question-t2-q5" class="question-statement" data-question="5" data-tutorial="2" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial2/?question=q5" data-title="T2 Q5 · Question statement" aria-label="Slide 2: Tutorial Set 2 Question 5 statement">
+      <h1 class="slide-heading">Tutorial Set 2 · Question 5</h1>
+      <img class="question-crop" src="assets/questions/set2-q5.png" width="858" height="490" style="left:98px;top:132px" alt="Tutorial Set 2, Question 5. The service stations along a highway are located according to a Poisson process with an average of 1 service station in 10 miles. Because of a gas shortage, there is a probability of 0.2 that a service station would not have gasoline available. Assume that the availabilities of gasoline at different service stations are statistically independent. (a) What is the probability that there is at most 1 service station in the next 15 miles of highway? (b) What is the probability that none of the next 3 stations have gasoline for sale? (c) A driver on this highway notices that the fuel gauge in his car reads empty; from experience he knows that he can go another 15 miles. What is the probability that he will be stranded on the highway without gasoline? Hint: the Taylor series expansion for e to the x may be useful: e^x = [1 + x/1! + x^2/2! + x^3/3! + ...]." draggable="false">
+    </section>
+    <section id="slide-2" data-question="5" data-tutorial="2" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial2/?question=q5" data-title="T2 Q5 · Stations &amp; fuel range" aria-label="Slide 3: Tutorial Set 2 Question 5 interactive">
+      <h1 class="slide-heading">T2 Q5 · Stations &amp; fuel range</h1>
+      <div class="web-panel">
+        <div class="web-toolbar">
+          <span class="web-label">Tutorial Set 2 · Question 5</span>
+          <button class="expand-web" type="button" aria-expanded="false">Enlarge exercise</button>
+          <details class="exercise-options"><summary>More</summary><div class="exercise-menu"><p>Resets this exercise and its chat.</p><button class="reload-web" type="button">Reset exercise</button></div></details>
+        </div>
+        <div class="web-viewport">
+          <div class="web-loading" role="status">Loading question…</div>
+          <iframe title="Tutorial Set 2 Question 5: Stations &amp; fuel range" data-web-src="https://jiaruilei.github.io/CE2407A_Tutorial2/?question=q5&amp;embed=1" allow="fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+    </section>
+    <section id="question-t2-q9" class="question-statement" data-question="9" data-tutorial="2" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial2/?question=q9" data-title="T2 Q9 · Question statement" aria-label="Slide 4: Tutorial Set 2 Question 9 statement">
+      <h1 class="slide-heading">Tutorial Set 2 · Question 9</h1>
+      <img class="question-crop" src="assets/questions/set2-q9.png" width="858" height="464" style="left:98px;top:132px" alt="Tutorial Set 2, Question 9. A concrete column is subjected to an axial load W that is a log-normal random variable with mean = 3000 kN and C.O.V = 0.2. The mean crushing strength (i.e. resistance) of the concrete, R is 35,000 kN per square metre with C.O.V = 0.2. Assume uniform compressive stress over the cross-sectional area of the column, so that the applied stress is S = W/A, where A = cross-sectional area of the column is a constant. (a) What is the distribution of the applied stress? (b) Determine the probability of crushing of a 0.4 m by 0.4 m column. Assume a convenient probability distribution for R. (c) If a failure (crushing) probability of 10^-3 is permitted, determine the required cross-sectional area of the column." draggable="false">
+    </section>
+    <section id="slide-3" data-question="9" data-tutorial="2" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial2/?question=q9" data-title="T2 Q9 · Column sizing" aria-label="Slide 5: Tutorial Set 2 Question 9 interactive">
+      <h1 class="slide-heading">T2 Q9 · Column sizing</h1>
+      <div class="web-panel">
+        <div class="web-toolbar">
+          <span class="web-label">Tutorial Set 2 · Question 9</span>
+          <button class="expand-web" type="button" aria-expanded="false">Enlarge exercise</button>
+          <details class="exercise-options"><summary>More</summary><div class="exercise-menu"><p>Resets this exercise and its chat.</p><button class="reload-web" type="button">Reset exercise</button></div></details>
+        </div>
+        <div class="web-viewport">
+          <div class="web-loading" role="status">Loading question…</div>
+          <iframe title="Tutorial Set 2 Question 9: Column sizing" data-web-src="https://jiaruilei.github.io/CE2407A_Tutorial2/?question=q9&amp;embed=1" allow="fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+    </section>
+    <section id="whiteboard" class="whiteboard" data-title="Whiteboard" aria-label="Slide 6: Blank whiteboard"></section>
+  </div>
+</main>
+<nav class="deck-controls" aria-label="Presentation controls">
+  <button id="previous" type="button" aria-label="Previous slide" title="Previous (Left arrow)">‹</button>
+  <span id="counter" aria-live="polite">1 / 6</span>
+  <button id="next" type="button" aria-label="Next slide" title="Next (Right arrow)">›</button>
+  <span class="divider" aria-hidden="true"></span>
+  <button id="ink-toggle" type="button" aria-expanded="false" aria-controls="ink-toolbar" title="Annotation tools">Ink</button>
+  <button id="overview" type="button" title="Slide overview (O)">Overview</button>
+  <button id="fullscreen" type="button" title="Full screen (F)">Full screen</button>
+</nav>
+<div id="ink-toolbar" class="ink-toolbar" role="toolbar" aria-label="Annotation tools" hidden>
+  <div class="ink-tools" role="group" aria-label="Drawing tool">
+    <button type="button" data-ink-tool="pointer" aria-pressed="true" title="Use the interactive questions (Escape)">Pointer</button>
+    <button type="button" data-ink-tool="pen" aria-pressed="false" title="Draw with a pen">Pen</button>
+    <button type="button" data-ink-tool="highlighter" aria-pressed="false" title="Highlight without covering the text">Highlighter</button>
+    <button type="button" data-ink-tool="eraser" aria-pressed="false" title="Erase a whole stroke">Eraser</button>
+  </div>
+  <div class="ink-colors" role="group" aria-label="Ink color">
+    <button type="button" class="ink-color" data-ink-color="#e53935" style="--swatch:#e53935" aria-label="Red ink" aria-pressed="true" title="Red"></button>
+    <button type="button" class="ink-color" data-ink-color="#2563eb" style="--swatch:#2563eb" aria-label="Blue ink" aria-pressed="false" title="Blue"></button>
+    <button type="button" class="ink-color" data-ink-color="#172b4d" style="--swatch:#172b4d" aria-label="Dark ink" aria-pressed="false" title="Dark"></button>
+    <button type="button" class="ink-color" data-ink-color="#16834a" style="--swatch:#16834a" aria-label="Green ink" aria-pressed="false" title="Green"></button>
+    <button type="button" class="ink-color" data-ink-color="#ffd43b" style="--swatch:#ffd43b" aria-label="Yellow ink" aria-pressed="false" title="Yellow"></button>
+    <button type="button" class="ink-color" data-ink-color="#ffffff" style="--swatch:#ffffff" aria-label="White ink" aria-pressed="false" title="White"></button>
+  </div>
+  <select id="ink-width" aria-label="Ink thickness" title="Ink thickness">
+    <option value="2">Thin</option><option value="4" selected>Medium</option><option value="7">Thick</option>
+  </select>
+  <div class="ink-history" role="group" aria-label="Edit ink">
+    <button id="ink-undo" type="button" title="Undo ink (Ctrl+Z)" disabled>Undo</button>
+    <button id="ink-redo" type="button" title="Redo ink (Ctrl+Y)" disabled>Redo</button>
+    <button id="ink-clear" type="button" title="Clear ink in this view. Undo restores it." disabled>Clear ink</button>
+  </div>
+  <span id="ink-status" class="ink-sr-only" role="status" aria-live="polite"></span>
+</div>
+<div id="notice" role="status" hidden></div>
+<script src="reveal.js"></script>
+<script type="module" src="presentation.js?v=tutorial4-1"></script>
+</body>
+</html>

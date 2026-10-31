@@ -1,0 +1,67 @@
+{
+  "render_dpi": 288,
+  "raster_pixels_per_pdf_point": 4.0,
+  "css_pixels_per_pdf_point": 2,
+  "coordinate_system": "PDF points from page top-left",
+  "sources": [
+    {
+      "set": 2,
+      "filename": "CE2407A Tutorial Questions Set 2.pdf",
+      "sha256": "465cd1dc0a11aa7f07fe1da6b689057379235418eaadd267cecf8e4b08dced8f"
+    }
+  ],
+  "snapshots": [
+    {
+      "file": "set2-q5.png",
+      "set": 2,
+      "question": 5,
+      "page": 3,
+      "slide_id": "question-t2-q5",
+      "bbox_pt": [
+        92,
+        354,
+        521,
+        599
+      ],
+      "position_css": [
+        98,
+        132
+      ],
+      "alt": "Tutorial Set 2, Question 5. The service stations along a highway are located according to a Poisson process with an average of 1 service station in 10 miles. Because of a gas shortage, there is a probability of 0.2 that a service station would not have gasoline available. Assume that the availabilities of gasoline at different service stations are statistically independent. (a) What is the probability that there is at most 1 service station in the next 15 miles of highway? (b) What is the probability that none of the next 3 stations have gasoline for sale? (c) A driver on this highway notices that the fuel gauge in his car reads empty; from experience he knows that he can go another 15 miles. What is the probability that he will be stranded on the highway without gasoline? Hint: the Taylor series expansion for e to the x may be useful: e^x = [1 + x/1! + x^2/2! + x^3/3! + ...].",
+      "dimensions_css": [
+        858,
+        490
+      ],
+      "dimensions_px": [
+        1716,
+        980
+      ]
+    },
+    {
+      "file": "set2-q9.png",
+      "set": 2,
+      "question": 9,
+      "page": 5,
+      "slide_id": "question-t2-q9",
+      "bbox_pt": [
+        92,
+        356,
+        521,
+        588
+      ],
+      "position_css": [
+        98,
+        132
+      ],
+      "alt": "Tutorial Set 2, Question 9. A concrete column is subjected to an axial load W that is a log-normal random variable with mean = 3000 kN and C.O.V = 0.2. The mean crushing strength (i.e. resistance) of the concrete, R is 35,000 kN per square metre with C.O.V = 0.2. Assume uniform compressive stress over the cross-sectional area of the column, so that the applied stress is S = W/A, where A = cross-sectional area of the column is a constant. (a) What is the distribution of the applied stress? (b) Determine the probability of crushing of a 0.4 m by 0.4 m column. Assume a convenient probability distribution for R. (c) If a failure (crushing) probability of 10^-3 is permitted, determine the required cross-sectional area of the column.",
+      "dimensions_css": [
+        858,
+        464
+      ],
+      "dimensions_px": [
+        1716,
+        928
+      ]
+    }
+  ]
+}
