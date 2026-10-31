@@ -85,7 +85,7 @@ test('review pages, question statements and whiteboard preserve old ink and inde
   const history = new InkHistory();
   assert.equal(history.load(JSON.stringify(existing)), true);
   const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
-  const reviewKeys = [...html.matchAll(/<section id="([^"]+)"[^>]*data-review-seconds=/g)].map(match => match[1]);
+  const reviewKeys = [...html.matchAll(/<section id="([^"]+)"[^>]*class="review-slide\b/g)].map(match => match[1]);
   assert.equal(reviewKeys.length, 7);
   const questionKeys = ['question-t2-q5', 'question-t2-q9', 'whiteboard', ...reviewKeys];
   for (const key of questionKeys) {
