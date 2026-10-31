@@ -100,7 +100,8 @@ export function installQuestionViewer({ onOpen = () => {}, onClose = () => {} } 
       copy.src = source.currentSrc || source.src;
       copy.alt = source.alt;
       copy.draggable = false;
-      for (const property of ['left', 'top', 'width', 'height']) {
+      // Keep source-image clipping when a portrait snapshot spans two columns.
+      for (const property of ['left', 'top', 'width', 'height', 'clip-path']) {
         copy.style.setProperty(property, style.getPropertyValue(property));
       }
       return copy;

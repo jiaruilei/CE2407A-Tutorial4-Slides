@@ -1,5 +1,5 @@
 // Include the source tutorial in statement keys so question numbers stay unambiguous.
-const SLIDE_KEY = /^(?:slide-1|slide-[23](?::expanded)?|question-t2-q[59]|whiteboard|review-(?:scope|uncertainty|events|bayes|random-variables|normal|lognormal))$/;
+const SLIDE_KEY = /^(?:slide-1|slide-[23](?::expanded)?|(?:question|notes)-t2-q[59]|whiteboard|review-(?:scope|uncertainty|events|bayes|random-variables|normal|lognormal))$/;
 const MAX_STROKES = 5000;
 const MAX_POINTS = 200000;
 const MAX_COORDINATE = 1e7;

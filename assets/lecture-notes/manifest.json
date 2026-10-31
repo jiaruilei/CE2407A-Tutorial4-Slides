@@ -1,0 +1,105 @@
+{
+  "layout": "Original PNG files copied byte-for-byte. CSS clipping arranges source regions into two columns without editing the images. The Q9 right column repeats the source header. Only the blank left margin is omitted from the displayed table.",
+  "heading": {
+    "x": 97.92,
+    "y": 32,
+    "font_px": 52
+  },
+  "panel_width_px": 530,
+  "snapshots": [
+    {
+      "question": 5,
+      "size": [
+        470,
+        720
+      ],
+      "panels": [
+        {
+          "bounds": [
+            0,
+            0,
+            470,
+            350
+          ],
+          "at": [
+            98,
+            132
+          ],
+          "alt": "Poisson process assumptions and rate: events occur randomly in time or space, and occurrences in different intervals are independent. The probability of an event in a small interval delta t is nu times delta t, where nu is the mean rate. The original diagram and infinitesimal-interval statement are retained.",
+          "css": "left:98.000000px;top:132.000000px;width:530.000000px;height:811.914894px;clip-path:inset(0.000000000% 0.000000000% 51.388888889% 0.000000000%)"
+        },
+        {
+          "bounds": [
+            0,
+            350,
+            470,
+            720
+          ],
+          "at": [
+            652,
+            132
+          ],
+          "alt": "Derivation of the Poisson distribution as the limit of a binomial model over n small intervals. The final formula is P(X=x)=(nu t)^x exp(-nu t)/x!, for x=0,1,2,... . The original limit identity and note that t can denote space are retained.",
+          "css": "left:652.000000px;top:-262.680851px;width:530.000000px;height:811.914894px;clip-path:inset(48.611111111% 0.000000000% 0.000000000% 0.000000000%)"
+        }
+      ],
+      "source": "Q5.png",
+      "asset": "assets/lecture-notes/set2-q5.png",
+      "sha256": "ed8593b754e671b6b8698c7609572a5731d16bc0d3e73ac6719fd47ce7385f22"
+    },
+    {
+      "question": 9,
+      "size": [
+        602,
+        721
+      ],
+      "panels": [
+        {
+          "bounds": [
+            60,
+            0,
+            602,
+            412
+          ],
+          "at": [
+            98,
+            132
+          ],
+          "alt": "Standard normal cumulative distribution table, original heading, curve, column offsets 0.00 to 0.09, and rows z=0.0 through z=1.8. The original red S_p and p annotations and the blue guide line are retained.",
+          "css": "left:39.328413px;top:132.000000px;width:588.671587px;height:705.036900px;clip-path:inset(0.000000000% 0.000000000% 42.857142857% 9.966777409%)"
+        },
+        {
+          "bounds": [
+            60,
+            0,
+            602,
+            117
+          ],
+          "at": [
+            652,
+            132
+          ],
+          "alt": "Repeated original standard normal table heading, curve and column offsets for the continued rows.",
+          "css": "left:593.328413px;top:132.000000px;width:588.671587px;height:705.036900px;clip-path:inset(0.000000000% 0.000000000% 83.772538141% 9.966777409%)"
+        },
+        {
+          "bounds": [
+            60,
+            412,
+            602,
+            721
+          ],
+          "at": [
+            652,
+            246.40959409594097
+          ],
+          "alt": "Standard normal table continued, rows z=1.9 through z=3.5 and the original z=4.0 and z=5.0 entries. Values are cumulative probabilities Phi(z).",
+          "css": "left:593.328413px;top:-156.468635px;width:588.671587px;height:705.036900px;clip-path:inset(57.142857143% 0.000000000% 0.000000000% 9.966777409%)"
+        }
+      ],
+      "source": "Q9.png",
+      "asset": "assets/lecture-notes/set2-q9.png",
+      "sha256": "bed170f594f768273719b2ef401b374ff2736aaccd20f3687ed41c698354de4d"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 'use strict';
-import { installAnnotations } from './annotations.js?v=quiz-review-1';
+import { installAnnotations } from './annotations.js?v=lecture-notes-1';
 import { createFullscreenController } from './fullscreen.js';
-import { installQuestionViewer } from './question-viewer.js';
+import { installQuestionViewer } from './question-viewer.js?v=lecture-notes-1';
 const deck = new Reveal({
   width: 1280, height: 720, margin: 0.015, minScale: 0.1, maxScale: 3,
   hash: true, history: true, controls: false, progress: true, center: false,
@@ -107,10 +107,11 @@ function sync() {
   const question = slide.dataset.question;
   const questionLabel = question ? `T${slide.dataset.tutorial} Q${question}` : '';
   const isStatement = slide.classList.contains('question-statement');
+  const isNotes = slide.classList.contains('lecture-notes');
   const isWhiteboard = slide.id === 'whiteboard';
   const isReview = slide.classList.contains('review-slide');
   document.getElementById('current-question').textContent = question
-    ? `${questionLabel} · ${isStatement ? 'Question' : 'Explore'}` : isWhiteboard ? 'Whiteboard' : isReview ? 'Quiz review' : 'Sections';
+    ? `${questionLabel} · ${isNotes ? 'Notes' : isStatement ? 'Question' : 'Explore'}` : isWhiteboard ? 'Whiteboard' : isReview ? 'Quiz review' : 'Sections';
   viewQuestion.hidden = !isStatement;
   openExercise.hidden = isWhiteboard || isReview;
   openExercise.href = slide.dataset.exerciseUrl || 'https://jiaruilei.github.io/CE2407A_Tutorial2/';
