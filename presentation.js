@@ -2,6 +2,7 @@
 import { installAnnotations } from './annotations.js?v=lecture-notes-2';
 import { createFullscreenController } from './fullscreen.js';
 import { installQuestionViewer } from './question-viewer.js?v=lecture-notes-1';
+import { installMath } from './math-rendering.js?v=mathjax-1';
 const deck = new Reveal({
   width: 1280, height: 720, margin: 0.015, minScale: 0.1, maxScale: 3,
   hash: true, history: true, controls: false, progress: true, center: false,
@@ -153,6 +154,7 @@ next.addEventListener('click', () => deck.next());
 document.getElementById('overview').addEventListener('click', () => deck.toggleOverview());
 fullscreen.addEventListener('click', toggleFullscreen);
 installAnnotations(deck, notice);
+installMath(deck, notice);
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape') {
     const panel = deck.getCurrentSlide()?.querySelector('.is-expanded');

@@ -7,9 +7,6 @@
 .reveal .review-slide p { color: #172b4d; font-size: 27px; line-height: 1.35; margin: 0 0 19px; }
 .reveal .review-slide .equation { font-size: 29px; line-height: 1.5; margin-bottom: 20px; white-space: nowrap; }
 .review-slide sub, .review-slide sup { font-size: .66em; line-height: 0; }
-.review-slide .fraction { display: inline-flex; flex-direction: column; align-items: center; vertical-align: middle; text-align: center; line-height: 1.18; margin: 0 5px; }
-.review-slide .fraction > :first-child { border-bottom: 1.5px solid currentColor; padding: 0 5px 4px; }
-.review-slide .fraction > :last-child { padding: 4px 5px 0; }
 .reveal .review-slide .review-small { font-size: 23px; line-height: 1.35; }
 .reveal .review-slide .review-note { font-size: 25px; color: #526579; }
 .review-check { border-left: 3px solid var(--orange); padding-left: 24px; }
@@ -28,3 +25,10 @@
 .reveal .review-slide .compact-equations .equation { font-size: 27px; margin-bottom: 15px; }
 .reveal .review-slide .compact-equations p { margin-bottom: 14px; }
 .reveal .review-slide .review-subject { color: var(--navy); font-weight: bold; }
+/* Keep SVG mathematics crisp at every Reveal scale, with slide-sized spacing. */
+.review-columns > div { min-width: 0; }
+.review-slide mjx-container[jax="SVG"] { color: inherit; }
+.review-slide mjx-container[jax="SVG"] > svg { max-width: none; max-height: none; }
+.review-slide mjx-container[jax="SVG"][display="true"] { margin: .25em 0; text-align: left; }
+.review-slide .equation mjx-container { vertical-align: middle; }
+.review-answer mjx-container { max-width: 100%; }

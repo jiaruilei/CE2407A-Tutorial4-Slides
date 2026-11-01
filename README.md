@@ -23,6 +23,8 @@ Sixteen web slides for Tutorial 4, Week 12: a quiz review of Lectures 1–5, fol
 
 The seven review slides include quick checks with **Show answer** and room for handwriting. Use **Pointer** when opening an answer, then select the pen to continue writing. Lecture links open the corresponding Canvas notes and require course access. Supporting teaching cues and source details are stored in each slide's HTML notes.
 
+Review formulas and revealed answers use locally bundled MathJax 3.2.2 with SVG output for fractions, roots, sums, integrals and Greek symbols. Author editable mathematics with `\(...\)` or `\[...\]`. The renderer matches the embedded exercises and needs no external CDN or font download. `mathjax-config.js` configures it; `math-rendering.js` typesets review pages and opened answers, then refreshes the slide layout. Original question and lecture-note snapshots remain images. The MathJax license is in `assets/mathjax/LICENSE`.
+
 Coverage follows the [28 October announcement](https://canvas.nus.edu.sg/courses/93981/discussion_topics/510267): Lectures 1–5, including normal and lognormal distributions. Lectures 6–7, blended-learning materials and MATLAB are excluded. The given exponential PDF example in Lecture 4 remains part of the covered notes. Q5 and Q9 follow as regular tutorial work involving later topics.
 
 ## Present

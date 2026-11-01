@@ -9,8 +9,10 @@
   <link rel="stylesheet" href="reveal.css">
   <link rel="stylesheet" href="annotations.css?v=tutorial4-1">
   <link rel="stylesheet" href="styles.css?v=lecture-notes-1">
-  <link rel="stylesheet" href="review.css?v=quiz-review-1">
+  <link rel="stylesheet" href="review.css?v=mathjax-1">
   <link rel="stylesheet" href="question-viewer.css?v=tutorial4-1">
+  <script defer src="mathjax-config.js?v=mathjax-1"></script>
+  <script defer id="MathJax-script" src="assets/mathjax/tex-svg.js?v=3.2.2"></script>
 </head>
 <body>
 <nav class="study-controls" aria-label="Study controls">
@@ -76,126 +78,126 @@
       <div class="review-columns">
         <div>
           <p><strong>Epistemic:</strong> imperfect model<br><strong>Aleatory:</strong> inherent variability<br><strong>Statistical:</strong> limited information</p>
-          <p class="equation">Relative frequency: r<sub>i</sub> = n<sub>i</sub> / N</p>
-          <p class="equation">Density height: h<sub>i</sub> = r<sub>i</sub> / w<sub>i</sub></p>
-          <p class="equation">Σ r<sub>i</sub> = 1 &nbsp;&nbsp; Σ h<sub>i</sub>w<sub>i</sub> = 1</p>
-          <p class="review-note">Density × bin width gives relative frequency.</p>
+          <p class="equation">Relative frequency: \(r_i = \dfrac{n_i}{N}\)</p>
+          <p class="equation">Density height: \(h_i = \dfrac{r_i}{w_i}\)</p>
+          <p class="equation">\(\sum_i r_i = 1 \qquad \sum_i h_i w_i = 1\)</p>
+          <p class="review-note">Density \(\times\) bin width gives relative frequency.</p>
         </div>
         <div class="review-check">
           <h2>Quick check</h2>
-          <p>A concrete-strength bin contains<br><strong>12 of 25 specimens</strong>.<br>Its width is <strong>2.5 MPa</strong>.</p>
+          <p>A concrete-strength bin contains<br><strong>12 of 25 specimens</strong>.<br>Its width is <strong>\(2.5\,\mathrm{MPa}\)</strong>.</p>
           <p>Find its relative frequency<br>and density height.</p>
-          <details class="review-answer"><summary>Show answer</summary><p>r = 12 / 25 = <strong>0.48</strong><br>h = 0.48 / 2.5<br>&nbsp;&nbsp; = <strong>0.192 MPa<sup>−1</sup></strong></p></details>
+          <details class="review-answer"><summary>Show answer</summary><p>\(\begin{aligned}r &amp;= \dfrac{12}{25} = \mathbf{0.48} \\ h &amp;= \dfrac{0.48}{2.5} \\ &amp;= \mathbf{0.192}\,\mathrm{MPa}^{-1}\end{aligned}\)</p></details>
         </div>
       </div>
       <p class="review-source"><a href="https://canvas.nus.edu.sg/courses/93981/files/folder/Lecture%20notes?preview=10172906" target="_blank" rel="noopener">Lecture 1, slides 10–13 and 17–20</a></p>
-      <aside class="notes">Use the lecturer’s three uncertainty categories. Risk-informed design balances consequences and cost. Define n_i as the bin count, N as total count, and w_i as bin width. Ask whether the histogram height or area represents relative frequency. Use the empty lower area for the rectangle area calculation.</aside>
+      <aside class="notes">Use the lecturer’s three uncertainty categories. Risk-informed design balances consequences and cost. Define \(n_i\) as the bin count, \(N\) as total count, and \(w_i\) as bin width. Ask whether the histogram height or area represents relative frequency. Use the empty lower area for the rectangle area calculation.</aside>
     </section>
     <section id="review-events" class="review-slide" data-title="Quiz review · Events &amp; independence" aria-label="Slide 4: Events and independence">
       <h1 class="slide-heading">Events &amp; independence</h1>
       <p class="review-meta">Lectures 2–3</p>
       <div class="review-columns">
         <div>
-          <p class="equation">P(A ∪ B) = P(A) + P(B) − P(A ∩ B)</p>
-          <p class="equation">(A ∪ B)<sup>c</sup> = A<sup>c</sup> ∩ B<sup>c</sup></p>
-          <p><strong>Independent events</strong><br>P(A ∩ B) = P(A)P(B)</p>
-          <p><strong>Mutually exclusive events</strong><br>A ∩ B = ∅</p>
+          <p class="equation">\(P(A \cup B) = P(A) + P(B) - P(A \cap B)\)</p>
+          <p class="equation">\((A \cup B)^c = A^c \cap B^c\)</p>
+          <p><strong>Independent events</strong><br>\(P(A \cap B) = P(A)P(B)\)</p>
+          <p><strong>Mutually exclusive events</strong><br>\(A \cap B = \varnothing\)</p>
           <p class="review-note">Positive-probability, mutually exclusive<br>events cannot be independent.</p>
         </div>
         <div class="review-check">
           <h2>Quick check · Set 1 Q7</h2>
-          <p>Two independent detectors have detection probabilities<br><strong>0.8 and 0.9</strong>.</p>
+          <p>Two independent detectors have detection probabilities<br><strong>\(0.8\) and \(0.9\)</strong>.</p>
           <p>What is the probability that<br><strong>at least one</strong> detects?</p>
-          <details class="review-answer"><summary>Show answer</summary><p>1 − P(neither detects)<br>= 1 − (0.2)(0.1)<br>= <strong>0.98</strong></p></details>
+          <details class="review-answer"><summary>Show answer</summary><p>\(\begin{aligned}&amp;1 - P(\text{neither detects}) \\ &amp;= 1 - (0.2)(0.1) \\ &amp;= \mathbf{0.98}\end{aligned}\)</p></details>
         </div>
       </div>
       <p class="review-source"><a href="https://canvas.nus.edu.sg/courses/93981/files/folder/Lecture%20notes?preview=10172907" target="_blank" rel="noopener">Lecture 2, §§2.1–2.3</a> and <a href="https://canvas.nus.edu.sg/courses/93981/files/folder/Lecture%20notes?preview=10172908" target="_blank" rel="noopener">Lecture 3, independence</a> · Tutorial Set 1 Q7(a)</p>
-      <aside class="notes">Translate and/or/not into intersection/union/complement. Count or area ratios require equally likely outcomes or a uniform model. Use independence only when stated or justified. Follow up orally: exactly one detection is 0.8×0.1 + 0.2×0.9 = 0.26; both detect with probability 0.72. These sum to the at-least-one probability.</aside>
+      <aside class="notes">Translate and/or/not into intersection/union/complement. Count or area ratios require equally likely outcomes or a uniform model. Use independence only when stated or justified. Follow up orally: exactly one detection is \(0.8\times0.1 + 0.2\times0.9 = 0.26\); both detect with probability \(0.72\). These sum to the at-least-one probability.</aside>
     </section>
     <section id="review-bayes" class="review-slide" data-title="Quiz review · Conditional probability &amp; Bayes" aria-label="Slide 5: Conditional probability and Bayes theorem">
       <h1 class="slide-heading">Conditional probability &amp; Bayes</h1>
       <p class="review-meta">Lecture 3</p>
       <div class="review-columns">
         <div>
-          <p class="equation">P(A | B) = <span class="fraction"><span>P(A ∩ B)</span><span>P(B)</span></span></p>
-          <p class="equation">P(A) = Σ P(A | E<sub>i</sub>)P(E<sub>i</sub>)</p>
-          <p class="equation">P(E<sub>i</sub> | A) = <span class="fraction"><span>P(A | E<sub>i</sub>)P(E<sub>i</sub>)</span><span>P(A)</span></span></p>
-          <p class="review-small">The E<sub>i</sub> form a mutually exclusive,<br>exhaustive partition.</p>
+          <p class="equation">\(P(A \mid B) = \dfrac{P(A \cap B)}{P(B)}\)</p>
+          <p class="equation">\(P(A) = \sum_i P(A \mid E_i)P(E_i)\)</p>
+          <p class="equation">\(P(E_i \mid A) = \dfrac{P(A \mid E_i)P(E_i)}{P(A)}\)</p>
+          <p class="review-small">The \(E_i\) form a mutually exclusive,<br>exhaustive partition.</p>
           <p class="review-note">The conditioning event determines<br>the denominator.</p>
         </div>
         <div class="review-check">
           <h2>Quick check · Set 1 Q6</h2>
-          <p class="review-small">Earthquake rates L : M : H = 1 : 0.1 : 0.01.<br>Liquefaction F has conditional<br>probabilities 0.05, 0.20 and 0.90.</p>
-          <p>Given liquefaction, find P(L | F).</p>
-          <details class="review-answer"><summary>Show answer</summary><p class="equation"><span class="fraction"><span>0.05 × 1</span><span>0.05 + 0.020 + 0.009</span></span><br>= <strong>0.633</strong></p><p class="review-small">Normalize rates by 1.11.<br>This factor cancels in the ratio.</p></details>
+          <p class="review-small">Earthquake rates \(L : M : H = 1 : 0.1 : 0.01\).<br>Liquefaction \(F\) has conditional<br>probabilities \(0.05\), \(0.20\) and \(0.90\).</p>
+          <p>Given liquefaction, find \(P(L \mid F)\).</p>
+          <details class="review-answer"><summary>Show answer</summary><p class="equation">\(\begin{aligned}&amp;\dfrac{0.05\times1}{0.05 + 0.020 + 0.009} \\ &amp;= \mathbf{0.633}\end{aligned}\)</p><p class="review-small">Normalize rates by \(1.11\).<br>This factor cancels in the ratio.</p></details>
         </div>
       </div>
       <p class="review-source"><a href="https://canvas.nus.edu.sg/courses/93981/files/folder/Lecture%20notes?preview=10172908" target="_blank" rel="noopener">Lecture 3, §§2.4–2.7</a> · Tutorial Set 1 Q6(b), (d)</p>
-      <aside class="notes">Priors are 1/1.11, 0.1/1.11 and 0.01/1.11. Total liquefaction probability is 0.079/1.11 = 0.07117. Contrast posterior P(L|F)=0.6329 with likelihood P(F|L)=0.05. Conditional probabilities require a positive-probability conditioning event. A valid complement is P(A^c|B)=1−P(A|B), not generally P(A|B^c)=1−P(A|B).</aside>
+      <aside class="notes">Priors are \(1/1.11\), \(0.1/1.11\) and \(0.01/1.11\). Total liquefaction probability is \(0.079/1.11 = 0.07117\). Contrast posterior \(P(L\mid F)=0.6329\) with likelihood \(P(F\mid L)=0.05\). Conditional probabilities require a positive-probability conditioning event. A valid complement is \(P(A^c\mid B)=1-P(A\mid B)\), not generally \(P(A\mid B^c)=1-P(A\mid B)\).</aside>
     </section>
     <section id="review-random-variables" class="review-slide" data-title="Quiz review · Random variables" aria-label="Slide 6: Random variables, probabilities and moments">
       <h1 class="slide-heading">Random variables</h1>
       <p class="review-meta">Lecture 4</p>
       <div class="review-columns">
         <div class="compact-equations">
-          <p class="equation"><strong>PMF:</strong> p(x) = P(X = x), &nbsp; Σ p(x) = 1</p>
-          <p class="equation"><strong>PDF:</strong> f(x) ≥ 0, &nbsp; ∫ f(x) dx = 1</p>
-          <p class="equation"><strong>CDF:</strong> F(x) = P(X ≤ x)<br>P(a &lt; X ≤ b) = F(b) − F(a)</p>
-          <p class="equation">μ = Σ xp(x) &nbsp;or&nbsp; ∫ xf(x) dx</p>
-          <p class="equation">σ<sup>2</sup> = E[X<sup>2</sup>] − μ<sup>2</sup>, &nbsp; COV = σ / μ</p>
+          <p class="equation"><strong>PMF:</strong> \(p(x) = P(X = x), \quad \sum_x p(x) = 1\)</p>
+          <p class="equation"><strong>PDF:</strong> \(f(x) \ge 0, \quad \int f(x)\,\mathrm{d}x = 1\)</p>
+          <p class="equation"><strong>CDF:</strong> \(F(x) = P(X \le x)\)<br>\(P(a &lt; X \le b) = F(b) - F(a)\)</p>
+          <p class="equation">\(\mu = \sum_x xp(x) \quad\text{or}\quad \int xf(x)\,\mathrm{d}x\)</p>
+          <p class="equation">\(\sigma^2 = \operatorname{E}[X^2] - \mu^2, \quad \mathrm{COV} = \dfrac{\sigma}{\mu}\)</p>
           <p class="review-small">Sums and integrals run over the full support.<br>PDF height can exceed 1. Discrete endpoints matter.</p>
         </div>
         <div class="review-check">
           <h2>Quick check · Set 2 Q1</h2>
-          <p class="review-small">X = number of bids won.</p>
-          <table aria-label="Probability mass function for number of bids won"><tr><th scope="row">x</th><td>0</td><td>1</td><td>2</td><td>3</td></tr><tr><th scope="row">p(x)</th><td>.08</td><td>.42</td><td>.42</td><td>.08</td></tr></table>
-          <p>Find P(0 &lt; X ≤ 2), E[X]<br>and Var(X).</p>
-          <details class="review-answer"><summary>Show answer</summary><p>P = .42 + .42 = <strong>.84</strong><br>E[X] = <strong>1.50</strong><br>Var(X) = 2.82 − 1.50<sup>2</sup><br>&nbsp;&nbsp; = <strong>.57</strong></p></details>
+          <p class="review-small">\(X\) = number of bids won.</p>
+          <table aria-label="Probability mass function for number of bids won"><tr><th scope="row">\(x\)</th><td>\(0\)</td><td>\(1\)</td><td>\(2\)</td><td>\(3\)</td></tr><tr><th scope="row">\(p(x)\)</th><td>\(.08\)</td><td>\(.42\)</td><td>\(.42\)</td><td>\(.08\)</td></tr></table>
+          <p>Find \(P(0 &lt; X \le 2)\), \(\operatorname{E}[X]\)<br>and \(\operatorname{Var}(X)\).</p>
+          <details class="review-answer"><summary>Show answer</summary><p>\(\begin{aligned}P &amp;= .42 + .42 = \mathbf{.84} \\ \operatorname{E}[X] &amp;= \mathbf{1.50} \\ \operatorname{Var}(X) &amp;= 2.82 - 1.50^2 \\ &amp;= \mathbf{.57}\end{aligned}\)</p></details>
         </div>
       </div>
       <p class="review-source"><a href="https://canvas.nus.edu.sg/courses/93981/files/folder/Lecture%20notes?preview=10331143" target="_blank" rel="noopener">Lecture 4, PDF pp. 2–5 and 7–8</a> · Tutorial Set 2 Q1–2</p>
-      <aside class="notes">Set 2 Q1 uses independent bid probabilities 0.2, 0.5 and 0.8. Enumerate outcomes rather than assume a common success probability. For continuous variables F(x)=integral from minus infinity to x of f(u)du and P(X=x)=0. Set 2 Q2 applies the same expectation operations with integrals. Ask students to distinguish SD from variance, median from mean, and mode from both. A discrete CDF is right-continuous and may jump. Lecture 4 also covers skewness and the given exponential lifetime example.</aside>
+      <aside class="notes">Set 2 Q1 uses independent bid probabilities \(0.2\), \(0.5\) and \(0.8\). Enumerate outcomes rather than assume a common success probability. For continuous variables \(F(x)=\int_{-\infty}^{x}f(u)\,\mathrm{d}u\) and \(P(X=x)=0\). Set 2 Q2 applies the same expectation operations with integrals. Ask students to distinguish SD from variance, median from mean, and mode from both. A discrete CDF is right-continuous and may jump. Lecture 4 also covers skewness and the given exponential lifetime example.</aside>
     </section>
     <section id="review-normal" class="review-slide" data-title="Quiz review · Normal distribution" aria-label="Slide 7: Normal distribution probabilities">
       <h1 class="slide-heading">Normal distribution</h1>
       <p class="review-meta">Lecture 5</p>
       <div class="review-columns">
         <div>
-          <p class="equation">X ∼ N(μ, σ), &nbsp; Z = (X − μ) / σ</p>
+          <p class="equation">\(X \sim \mathrm{N}(\mu,\sigma), \quad Z = \dfrac{X-\mu}{\sigma}\)</p>
           <p class="review-small">In these notes, the second parameter is the SD.</p>
-          <p class="equation">Φ(z) = P(Z ≤ z)<br>P(X &gt; c) = 1 − Φ((c − μ) / σ)</p>
-          <p class="equation">Φ(−z) = 1 − Φ(z)</p>
+          <p class="equation">\(\Phi(z) = P(Z \le z)\)<br>\(P(X &gt; c) = 1 - \Phi\!\left(\dfrac{c-\mu}{\sigma}\right)\)</p>
+          <p class="equation">\(\Phi(-z) = 1 - \Phi(z)\)</p>
         </div>
         <div class="review-check">
           <h2>Quick check · Set 2 Q3</h2>
-          <p>Peak-hour traffic:<br>T ∼ N(200, 60) planes/hour.</p>
-          <p>Capacity = 350 planes/hour.<br>Find P(T &gt; 350).</p>
-          <details class="review-answer"><summary>Show answer</summary><p>z = (350 − 200) / 60 = 2.50<br>P = 1 − Φ(2.50)<br>&nbsp;&nbsp; = 1 − .9938 = <strong>.0062</strong></p></details>
+          <p>Peak-hour traffic:<br>\(T \sim \mathrm{N}(200,60)\) planes/hour.</p>
+          <p>Capacity = \(350\) planes/hour.<br>Find \(P(T &gt; 350)\).</p>
+          <details class="review-answer"><summary>Show answer</summary><p>\(\begin{aligned}z &amp;= \dfrac{350-200}{60} = 2.50 \\ P &amp;= 1 - \Phi(2.50) \\ &amp;= 1 - .9938 = \mathbf{.0062}\end{aligned}\)</p></details>
         </div>
       </div>
       <p class="review-source"><a href="https://canvas.nus.edu.sg/courses/93981/files/folder/Lecture%20notes?preview=10331144" target="_blank" rel="noopener">Lecture 5, PDF pp. 1–5</a> · Tutorial Set 2 Q3</p>
-      <aside class="notes">Draw a normal curve in the empty lower space and shade the right tail. Use CDF subtraction for intervals. For later parts of Q3, constant COV=0.3 means SD changes with the mean, and the stated mean growth is linear from today's value. Endpoint equality has zero probability for a continuous variable.</aside>
+      <aside class="notes">Draw a normal curve in the empty lower space and shade the right tail. Use CDF subtraction for intervals. For later parts of Q3, constant \(\mathrm{COV}=0.3\) means SD changes with the mean, and the stated mean growth is linear from today's value. Endpoint equality has zero probability for a continuous variable.</aside>
     </section>
     <section id="review-lognormal" class="review-slide" data-title="Quiz review · Lognormal distribution" aria-label="Slide 8: Lognormal distribution and parameter conversion">
       <h1 class="slide-heading">Lognormal distribution</h1>
       <p class="review-meta">Lecture 5</p>
       <div class="review-columns">
         <div class="compact-equations">
-          <p class="equation">X ∼ LN(λ, ζ), &nbsp; ln X ∼ N(λ, ζ)</p>
-          <p class="review-small">X &gt; 0. Parameters λ and ζ describe ln X.</p>
-          <p class="equation">δ = σ / μ, &nbsp; ζ = √<span style="text-decoration:overline">ln(1 + δ<sup>2</sup>)</span></p>
-          <p class="equation">Given the mean: λ = ln μ − ζ<sup>2</sup> / 2<br>Given the median: λ = ln(median)</p>
-          <p class="equation">P(X &gt; c) = 1 − Φ((ln c − λ) / ζ)</p>
+          <p class="equation">\(X \sim \mathrm{LN}(\lambda,\zeta), \quad \ln X \sim \mathrm{N}(\lambda,\zeta)\)</p>
+          <p class="review-small">\(X &gt; 0\). Parameters \(\lambda\) and \(\zeta\) describe \(\ln X\).</p>
+          <p class="equation">\(\delta = \dfrac{\sigma}{\mu}, \quad \zeta = \sqrt{\ln(1 + \delta^2)}\)</p>
+          <p class="equation">Given the mean: \(\lambda = \ln\mu - \dfrac{\zeta^2}{2}\)<br>Given the median: \(\lambda = \ln(\mathrm{median})\)</p>
+          <p class="equation">\(P(X &gt; c) = 1 - \Phi\!\left(\dfrac{\ln c-\lambda}{\zeta}\right)\)</p>
         </div>
         <div class="review-check">
           <h2>Quick check · Set 2 Q4</h2>
-          <p>Runoff R is lognormal.<br>Median = 7 cfs, COV = .15.<br>Sewer capacity = 8 cfs.</p>
-          <p>Find the per-storm flood<br>probability P(R &gt; 8).</p>
-          <details class="review-answer"><summary>Show answer</summary><p>λ = ln 7, &nbsp; ζ ≈ .14917<br>z = (ln 8 − ln 7) / ζ ≈ .89518<br>P ≈ <strong>.1853</strong></p><p class="review-small">With z rounded to .90, a normal<br>table gives .1841.</p></details>
+          <p>Runoff \(R\) is lognormal.<br>Median = \(7\) cfs, \(\mathrm{COV} = .15\).<br>Sewer capacity = \(8\) cfs.</p>
+          <p>Find the per-storm flood<br>probability \(P(R &gt; 8)\).</p>
+          <details class="review-answer"><summary>Show answer</summary><p>\(\begin{aligned}\lambda &amp;= \ln 7, \quad \zeta \approx .14917 \\ z &amp;= \dfrac{\ln 8-\ln 7}{\zeta} \approx .89518 \\ P &amp;\approx \mathbf{.1853}\end{aligned}\)</p><p class="review-small">With \(z\) rounded to \(.90\), a normal<br>table gives \(.1841\).</p></details>
         </div>
       </div>
       <p class="review-source"><a href="https://canvas.nus.edu.sg/courses/93981/files/folder/Lecture%20notes?preview=10331144" target="_blank" rel="noopener">Lecture 5, PDF pp. 7–8</a> · Tutorial Set 2 Q4</p>
-      <aside class="notes">Mean and median are different for a lognormal variable. Use the exact COV conversion; zeta approximately equals COV only for small COV. The example is per-storm risk. With conditionally independent storms of common exceedance probability p, the annual flood probability is sum over n of P(N=n)[1−(1−p)^n], using the given storm-count PMF rather than assuming Poisson. Continue with Set 2 Q5 and Q9, which require later lecture material.</aside>
+      <aside class="notes">Mean and median are different for a lognormal variable. Use the exact COV conversion; \(\zeta\) approximately equals COV only for small COV. The example is per-storm risk. With conditionally independent storms of common exceedance probability \(p\), the annual flood probability is \(\sum_n P(N=n)[1-(1-p)^n]\), using the given storm-count PMF rather than assuming Poisson. Continue with Set 2 Q5 and Q9, which require later lecture material.</aside>
     </section>
     <section id="question-t2-q5" class="question-statement" data-question="5" data-tutorial="2" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial2/?question=q5" data-title="T2 Q5 · Question statement" aria-label="Slide 9: Tutorial Set 2 Question 5 statement">
       <h1 class="slide-heading">Tutorial Set 2 · Question 5</h1>
@@ -291,6 +293,6 @@
 </div>
 <div id="notice" role="status" hidden></div>
 <script src="reveal.js"></script>
-<script type="module" src="presentation.js?v=lecture-notes-2"></script>
+<script type="module" src="presentation.js?v=mathjax-1"></script>
 </body>
 </html>
