@@ -1,5 +1,4 @@
 # CE2407A Tutorial 4
-
 Sixteen web slides for Tutorial 4, Week 12: a quiz review of Lectures 1–5, followed by Tutorial Questions Set 2, Q5 and Q9.
 
 1. Tutorial 4 cover and QR link
