@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="CE2407A Tutorial 4. Quiz review of Lectures 1–5, followed by Tutorial Set 2 Questions 5 and 9.">
+  <meta name="description" content="CE2407A Tutorial 4. Quiz review of Lectures 1–5, followed by Tutorial Set 2 Question 9.">
   <title>Tutorial 4 · CE2407A</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="reveal.css">
@@ -27,7 +27,6 @@
       <a class="menu-home" href="#/review-random-variables">L4 · Random variables</a>
       <a class="menu-home" href="#/review-normal">L5 · Normal distribution</a>
       <a class="menu-home" href="#/review-lognormal">L5 · Lognormal distribution</a>
-      <div class="question-menu-row"><span>T2 Q5 <small>Service stations</small></span><a href="#/question-t2-q5" aria-label="T2 Q5 question">Question</a><a href="#/notes-t2-q5" aria-label="T2 Q5 notes">Notes</a><a href="#/slide-2" aria-label="T2 Q5 explore">Explore</a></div>
       <div class="question-menu-row"><span>T2 Q9 <small>Column sizing</small></span><a href="#/question-t2-q9" aria-label="T2 Q9 question">Question</a><a href="#/notes-t2-q9-lognormal" aria-label="T2 Q9 notes">Notes</a><a href="#/slide-3" aria-label="T2 Q9 explore">Explore</a></div>
       <a class="menu-home" href="#/notes-t2-q9-products">Q9 · Products &amp; quotients</a>
       <a class="menu-home" href="#/notes-t2-q9">Q9 · Normal table</a>
@@ -48,7 +47,7 @@
       <div class="cover-copy">
         <p class="course-code">CE2407A</p>
         <h1>Tutorial 4</h1>
-        <p class="cover-topic">Quiz review &amp; <br>Q5/9 Tutorial Set 2</p>
+        <p class="cover-topic">Quiz review &amp; <br>Q9 Tutorial Set 2</p>
         <p class="cover-week">Week 12</p>
         <p class="cover-author">Assistant Professor Lei Jiarui, Gary<br>Civil and Environmental Engineering<br>National University of Singapore</p>
       </div>
@@ -66,7 +65,7 @@
           <p>The announcement excludes<br>Lectures 6–7, blended learning<br>and MATLAB.</p>
           <p class="review-small">Lecture 4’s given exponential PDF example remains within the covered notes.</p>
           <h2>After the review</h2>
-          <p>Set 2 Q5 and Q9<br><span class="review-small">Later lecture topics</span></p>
+          <p>Set 2 Q9<br><span class="review-small">Later lecture topic</span></p>
         </div>
       </div>
       <p class="review-source"><a href="https://canvas.nus.edu.sg/courses/93981/discussion_topics/510267" target="_blank" rel="noopener">Quiz coverage announcement, 28 October 2026</a></p>
@@ -197,51 +196,28 @@
         </div>
       </div>
       <p class="review-source"><a href="https://canvas.nus.edu.sg/courses/93981/files/folder/Lecture%20notes?preview=10331144" target="_blank" rel="noopener">Lecture 5, PDF pp. 7–8</a> · Tutorial Set 2 Q4</p>
-      <aside class="notes">Mean and median are different for a lognormal variable. Use the exact COV conversion; \(\zeta\) approximately equals COV only for small COV. The example is per-storm risk. With conditionally independent storms of common exceedance probability \(p\), the annual flood probability is \(\sum_n P(N=n)[1-(1-p)^n]\), using the given storm-count PMF rather than assuming Poisson. Continue with Set 2 Q5 and Q9, which require later lecture material.</aside>
+      <aside class="notes">Mean and median are different for a lognormal variable. Use the exact COV conversion; \(\zeta\) approximately equals COV only for small COV. The example is per-storm risk. With conditionally independent storms of common exceedance probability \(p\), the annual flood probability is \(\sum_n P(N=n)[1-(1-p)^n]\), using the given storm-count PMF rather than assuming Poisson. Continue with Set 2 Q9, which requires later lecture material.</aside>
     </section>
-    <section id="question-t2-q5" class="question-statement" data-question="5" data-tutorial="2" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial2/?question=q5" data-title="T2 Q5 · Question statement" aria-label="Slide 9: Tutorial Set 2 Question 5 statement">
-      <h1 class="slide-heading">Tutorial Set 2 · Question 5</h1>
-      <img class="question-crop" src="assets/questions/set2-q5.png" width="858" height="490" style="left:98px;top:132px" alt="Tutorial Set 2, Question 5. The service stations along a highway are located according to a Poisson process with an average of 1 service station in 10 miles. Because of a gas shortage, there is a probability of 0.2 that a service station would not have gasoline available. Assume that the availabilities of gasoline at different service stations are statistically independent. (a) What is the probability that there is at most 1 service station in the next 15 miles of highway? (b) What is the probability that none of the next 3 stations have gasoline for sale? (c) A driver on this highway notices that the fuel gauge in his car reads empty; from experience he knows that he can go another 15 miles. What is the probability that he will be stranded on the highway without gasoline? Hint: the Taylor series expansion for e to the x may be useful: e^x = [1 + x/1! + x^2/2! + x^3/3! + ...]." draggable="false">
-    </section>
-    <section id="notes-t2-q5" class="question-statement lecture-notes" data-question="5" data-tutorial="2" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial2/?question=q5" data-title="T2 Q5 · Lecture notes" aria-label="Slide 10: Tutorial Set 2 Question 5 lecture notes">
-      <h1 class="slide-heading">Question 5 · Lecture notes</h1>
-      <img class="question-crop" src="assets/lecture-notes/set2-q5.png" width="470" height="720" style="left:98.000000px;top:132.000000px;width:530.000000px;height:811.914894px;clip-path:inset(0.000000000% 0.000000000% 51.388888889% 0.000000000%)" alt="Poisson process assumptions and rate: events occur randomly in time or space, and occurrences in different intervals are independent. The probability of an event in a small interval delta t is nu times delta t, where nu is the mean rate. The original diagram and infinitesimal-interval statement are retained." draggable="false">
-      <img class="question-crop" src="assets/lecture-notes/set2-q5.png" width="470" height="720" style="left:652.000000px;top:-262.680851px;width:530.000000px;height:811.914894px;clip-path:inset(48.611111111% 0.000000000% 0.000000000% 0.000000000%)" alt="Derivation of the Poisson distribution as the limit of a binomial model over n small intervals. The final formula is P(X=x)=(nu t)^x exp(-nu t)/x!, for x=0,1,2,... . The original limit identity and note that t can denote space are retained." draggable="false">
-    </section>
-    <section id="slide-2" data-question="5" data-tutorial="2" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial2/?question=q5" data-title="T2 Q5 · Stations &amp; fuel range" aria-label="Slide 11: Tutorial Set 2 Question 5 interactive">
-      <h1 class="slide-heading">T2 Q5 · Stations &amp; fuel range</h1>
-      <div class="web-panel">
-        <div class="web-toolbar">
-          <span class="web-label">Tutorial Set 2 · Question 5</span>
-          <button class="expand-web" type="button" aria-expanded="false">Enlarge exercise</button>
-          <details class="exercise-options"><summary>More</summary><div class="exercise-menu"><p>Resets this exercise and its chat.</p><button class="reload-web" type="button">Reset exercise</button></div></details>
-        </div>
-        <div class="web-viewport">
-          <div class="web-loading" role="status">Loading question…</div>
-          <iframe title="Tutorial Set 2 Question 5: Stations &amp; fuel range" data-web-src="https://jiaruilei.github.io/CE2407A_Tutorial2/?question=q5&amp;embed=1" allow="fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        </div>
-      </div>
-    </section>
-    <section id="question-t2-q9" class="question-statement" data-question="9" data-tutorial="2" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial2/?question=q9" data-title="T2 Q9 · Question statement" aria-label="Slide 12: Tutorial Set 2 Question 9 statement">
+    <section id="question-t2-q9" class="question-statement" data-question="9" data-tutorial="2" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial2/?question=q9" data-title="T2 Q9 · Question statement" aria-label="Slide 9: Tutorial Set 2 Question 9 statement">
       <h1 class="slide-heading">Tutorial Set 2 · Question 9</h1>
       <img class="question-crop" src="assets/questions/set2-q9.png" width="858" height="464" style="left:98px;top:132px" alt="Tutorial Set 2, Question 9. A concrete column is subjected to an axial load W that is a log-normal random variable with mean = 3000 kN and C.O.V = 0.2. The mean crushing strength (i.e. resistance) of the concrete, R is 35,000 kN per square metre with C.O.V = 0.2. Assume uniform compressive stress over the cross-sectional area of the column, so that the applied stress is S = W/A, where A = cross-sectional area of the column is a constant. (a) What is the distribution of the applied stress? (b) Determine the probability of crushing of a 0.4 m by 0.4 m column. Assume a convenient probability distribution for R. (c) If a failure (crushing) probability of 10^-3 is permitted, determine the required cross-sectional area of the column." draggable="false">
     </section>
-    <section id="notes-t2-q9-lognormal" class="question-statement lecture-notes" data-question="9" data-tutorial="2" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial2/?question=q9" data-title="T2 Q9 · Lognormal distribution" aria-label="Slide 13: Tutorial Set 2 Question 9 Lognormal distribution">
+    <section id="notes-t2-q9-lognormal" class="question-statement lecture-notes" data-question="9" data-tutorial="2" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial2/?question=q9" data-title="T2 Q9 · Lognormal distribution" aria-label="Slide 10: Tutorial Set 2 Question 9 Lognormal distribution">
       <h1 class="slide-heading">Question 9 · Lognormal distribution</h1>
       <img class="question-crop" src="assets/lecture-notes/set2-q9-lognormal.png" width="412" height="305" style="left:98.000000px;top:132.000000px;width:700.000000px;height:518.203883px" alt="Lecture notes section 3.3.2: Lognormal Distribution. The original snapshot shows the lognormal density, parameters lambda = E(ln X) and zeta squared = var(ln X), mean and coefficient-of-variation conversions, median, and the distribution curves." draggable="false">
     </section>
-    <section id="notes-t2-q9-products" class="question-statement lecture-notes" data-question="9" data-tutorial="2" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial2/?question=q9" data-title="T2 Q9 · Products &amp; quotients" aria-label="Slide 14: Tutorial Set 2 Question 9 Products &amp; quotients">
+    <section id="notes-t2-q9-products" class="question-statement lecture-notes" data-question="9" data-tutorial="2" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial2/?question=q9" data-title="T2 Q9 · Products &amp; quotients" aria-label="Slide 11: Tutorial Set 2 Question 9 Products &amp; quotients">
       <h1 class="slide-heading">Question 9 · Products &amp; quotients</h1>
       <img class="question-crop" src="assets/lecture-notes/set2-q9-products.png" width="522" height="720" style="left:98.000000px;top:132.000000px;width:530.000000px;height:731.034483px;clip-path:inset(0.000000000% 0.000000000% 50.000000000% 0.000000000%)" alt="Lecture notes section 4.3.2: Product (or quotient) of Lognormal Random Variables. The original equations express Y = a0 X1^a1 X2^a2, transform it using natural logarithms, and calculate the mean and variance of ln Y, including the stated correlation assumption." draggable="false">
       <img class="question-crop" src="assets/lecture-notes/set2-q9-products.png" width="522" height="720" style="left:652.000000px;top:-233.517241px;width:530.000000px;height:731.034483px;clip-path:inset(50.000000000% 0.000000000% 0.000000000% 0.000000000%)" alt="Original diagram: taking the natural logarithm of a product of lognormal variables yields a weighted sum of normal variables. Calculate E(ln Y) = lambda Y and Stdev(ln Y) = zeta Y." draggable="false">
     </section>
-    <section id="notes-t2-q9" class="question-statement lecture-notes" data-question="9" data-tutorial="2" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial2/?question=q9" data-title="T2 Q9 · Lecture notes" aria-label="Slide 15: Tutorial Set 2 Question 9 lecture notes">
+    <section id="notes-t2-q9" class="question-statement lecture-notes" data-question="9" data-tutorial="2" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial2/?question=q9" data-title="T2 Q9 · Lecture notes" aria-label="Slide 12: Tutorial Set 2 Question 9 lecture notes">
       <h1 class="slide-heading">Question 9 · Lecture notes</h1>
       <img class="question-crop" src="assets/lecture-notes/set2-q9.png" width="602" height="721" style="left:39.328413px;top:132.000000px;width:588.671587px;height:705.036900px;clip-path:inset(0.000000000% 0.000000000% 42.857142857% 9.966777409%)" alt="Standard normal cumulative distribution table, original heading, curve, column offsets 0.00 to 0.09, and rows z=0.0 through z=1.8. The original red S_p and p annotations and the blue guide line are retained." draggable="false">
       <img class="question-crop" src="assets/lecture-notes/set2-q9.png" width="602" height="721" style="left:593.328413px;top:132.000000px;width:588.671587px;height:705.036900px;clip-path:inset(0.000000000% 0.000000000% 83.772538141% 9.966777409%)" alt="Repeated original standard normal table heading, curve and column offsets for the continued rows." draggable="false">
       <img class="question-crop" src="assets/lecture-notes/set2-q9.png" width="602" height="721" style="left:593.328413px;top:-156.468635px;width:588.671587px;height:705.036900px;clip-path:inset(57.142857143% 0.000000000% 0.000000000% 9.966777409%)" alt="Standard normal table continued, rows z=1.9 through z=3.5 and the original z=4.0 and z=5.0 entries. Values are cumulative probabilities Phi(z)." draggable="false">
     </section>
-    <section id="slide-3" data-question="9" data-tutorial="2" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial2/?question=q9" data-title="T2 Q9 · Column sizing" aria-label="Slide 16: Tutorial Set 2 Question 9 interactive">
+    <section id="slide-3" data-question="9" data-tutorial="2" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial2/?question=q9" data-title="T2 Q9 · Column sizing" aria-label="Slide 13: Tutorial Set 2 Question 9 interactive">
       <h1 class="slide-heading">T2 Q9 · Column sizing</h1>
       <div class="web-panel">
         <div class="web-toolbar">
@@ -259,7 +235,7 @@
 </main>
 <nav class="deck-controls" aria-label="Presentation controls">
   <button id="previous" type="button" aria-label="Previous slide" title="Previous (Left arrow)">‹</button>
-  <span id="counter" aria-live="polite">1 / 16</span>
+  <span id="counter" aria-live="polite">1 / 13</span>
   <button id="next" type="button" aria-label="Next slide" title="Next (Right arrow)">›</button>
   <span class="divider" aria-hidden="true"></span>
   <button id="ink-toggle" type="button" aria-expanded="false" aria-controls="ink-toolbar" title="Annotation tools">Ink</button>
