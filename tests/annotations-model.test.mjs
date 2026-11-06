@@ -78,7 +78,7 @@ test('serialized current ink round-trips, preserves document coordinates and res
   assert.equal(destination.get('slide-3:expanded').length, 0);
 });
 
-test('review pages, question statements, lecture notes and retired pages preserve independent ink histories', () => {
+test('review pages, question statements, lecture notes and retired whiteboard preserve independent ink histories', () => {
   const interactiveKeys = ['slide-1', 'slide-2', 'slide-3',
     'slide-2:expanded', 'slide-3:expanded'];
   const existing = { version: 1, slides: Object.fromEntries(interactiveKeys.map(key => [key, [stroke(`existing-${key}`)]])) };
@@ -88,8 +88,8 @@ test('review pages, question statements, lecture notes and retired pages preserv
   const reviewKeys = [...html.matchAll(/<section id="([^"]+)"[^>]*class="review-slide\b/g)].map(match => match[1]);
   assert.equal(reviewKeys.length, 7);
   const notesKeys = [...html.matchAll(/<section id="([^"]+)"[^>]*class="question-statement lecture-notes"/g)].map(match => match[1]);
-  assert.equal(notesKeys.length, 3);
-  const questionKeys = ['question-t2-q5', 'notes-t2-q5', 'question-t2-q9', 'whiteboard', ...reviewKeys, ...notesKeys];
+  assert.equal(notesKeys.length, 4);
+  const questionKeys = ['question-t2-q5', 'question-t2-q9', 'whiteboard', ...reviewKeys, ...notesKeys];
   for (const key of questionKeys) {
     assert.equal(history.add(key, stroke(`new-${key}`)), true);
     assert.equal(history.clear(key), true);
